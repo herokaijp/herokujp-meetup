@@ -102,7 +102,8 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
 	background:#C2E3F3;outline:none
 	}
 input[type="submit"],.button{
-	background:#7B5AE0;background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9372f7), color-stop(100%, #6443c9));
+	background:#7B5AE0;
+	background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9372f7), color-stop(100%, #6443c9));
 	background:-webkit-linear-gradient(top, #9372f7, #6443c9);
 	background:-moz-linear-gradient(top, #9372f7, #6443c9);
 	background:-o-linear-gradient(top, #9372f7, #6443c9);
@@ -142,26 +143,33 @@ input[type="submit"],.button{
 	.wrapper{
 			margin:0 auto;
 			padding:0 40px;width:560px
-		}
+	}
 	#summary{
 			background:url("/assets/bg-cliff-summary.png") center 250px no-repeat;
 			padding-bottom:52px;text-align:center
-		}
+	}
 	#summary h2{
 			margin-bottom:6px
-		}
+	}
 	#summary h3{
 			margin:0px 0 30px 0
-		}#summary h3 small{
+	}
+	#summary h3 small{
 			color:#6966A3;
 			font-size:100%
-		}#summary .button + small{
+	}
+	#summary .button + small{
 			color:#9C9BC9;
 			display:block;
 			margin-top:12px;
 			font-size:13px;
 			text-shadow:0 1px 0 rgba(0,0,0,0.5)
-		}#description{
+	}
+	#summary a{
+		color:#9C9CED;
+		text-decoration:none		
+	}
+	#description{
 			background:#363153;
 			background:-webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, rgba(102,89,166,0.5)), color-stop(100%, rgba(92,80,149,0.3)));
 			background:-webkit-radial-gradient(top, rgba(102,89,166,0.5), rgba(92,80,149,0.3));
@@ -174,30 +182,75 @@ input[type="submit"],.button{
 			-o-box-shadow:0 2px 8px rgba(0,0,0,0.25),0 1px 0 rgba(255,255,255,0.07) inset,0 -1px 0 rgba(255,255,255,0.03) inset;
 			box-shadow:0 2px 8px rgba(0,0,0,0.25),0 1px 0 rgba(255,255,255,0.07) inset,0 -1px 0 rgba(255,255,255,0.03) inset;
 			padding:20px 0
-		}#description .wrapper{
+		}
+	#description .wrapper{
 			background:url("/assets/kanji.png") 30px center no-repeat;
 			padding-left:340px;
 			min-height:279px;
 			width:260px
-		}#description article{
+		}
+	#description article{
 			position:relative;
 			top:22px
-		}#description h4,#description p{
+		}
+	#description h4,#description p{
 			text-shadow:0 -1px 0 rgba(0,0,0,0.5)
-		}#description h4{
+		}
+	#description h4{
 			margin:12px 0 0 0
-		}#description p{
+		}
+	#description p{
 			color:#A49EFF;-webkit-hyphens:auto
-		}#speakers,#schedule{
+		}
+	#speakers,#schedule{
 			padding:62px 0 600px 0;
 			background:url("/assets/bg-waterfall.png") center bottom no-repeat
-		}#speakers ul,#schedule ul{
+		}
+	#speakers ul,#schedule ul{
 			list-style:none;
 			margin:0;padding:0;
 			overflow:hidden
-		}#speakers li,#schedule li{
+		}
+	#speakers li,#schedule li{
 			float:left;
 			height:165px;
 			margin:0 40px 40px 0;
 			width:260px
-		}#speakers li:nth-child(2n),#schedule li:nth-child(2n){margin-right:0}#speakers li h4,#speakers li h5,#schedule li h4,#schedule li h5{margin:0;padding:0;text-shadow:0 1px 0 rgba(0,0,0,0.5)}#speakers li h4,#schedule li h4{text-transform:none}#speakers li h5,#schedule li h5{color:#FFF;font-size:13px;font-weight:normal;line-height:18px}#speakers li p,#schedule li p{color:#9c9bc9;margin:8px 0 0 0}#speakers li p a,#schedule li p a{color:#6767A8;text-decoration:none}#speakers li p a:hover,#schedule li p a:hover{color:#9C9CED}#speakers li .topic,#schedule li .topic{font-size:13px;font-style:italic;font-weight:normal;margin:2px 0 0 0}#speakers li.extended,#schedule li.extended{height:210px}#schedule li{clear:left;margin:0 0 40px 200px;height:70px}
+		}
+	#speakers li:nth-child(2n),#schedule li:nth-child(2n){
+		margin-right:0
+		}
+	#speakers li h4,#speakers li h5,#schedule li h4,#schedule li h5{
+		margin:0;padding:0;text-shadow:0 1px 0 rgba(0,0,0,0.5)
+		}
+	#speakers li h4,#schedule li h4{
+		text-transform:none
+		}
+	#speakers li h5,#schedule li h5{
+		color:#FFF;
+		font-size:13px;
+		font-weight:normal;
+		line-height:18px
+		}
+	#speakers li p,#schedule li p{
+		color:#9c9bc9;margin:8px 0 0 0
+		}
+	#speakers li p a,#schedule li p a{
+		color:#6767A8;
+		text-decoration:none
+		}
+	#speakers li p a:hover,#schedule li p a:hover{
+		color:#9C9CED
+		}
+	#speakers li .topic,#schedule li .topic{
+		font-size:13px;
+		font-style:italic;
+		font-weight:normal;
+		margin:2px 0 0 0
+		}
+	#speakers li.extended,#schedule li.extended{
+		height:210px
+		}
+	#schedule li{
+		clear:left;margin:0 0 40px 200px;height:70px
+		}
