@@ -143,11 +143,11 @@ body{
     min-width:640px
 }
 h1{
-    background:url("/assets/logo-waza.png") center top no-repeat;
-    height:193px;
-    margin:0 auto;
+    background:url("/assets/heroku-logo.png") center top no-repeat;
+    height:100px;
+    margin:5% auto;
     text-indent:-99999px;
-    width:139px
+    width:300px
 }
 h2,h3,h4{
     font-family:"CorbelRegular";
@@ -273,10 +273,10 @@ input[type="submit"]:disabled,.button.disabled{
     padding:20px 0
 }
 #description .wrapper{
-    background:url("/assets/kanji.png") 30px center no-repeat;
-    padding-left:340px;
-    min-height:279px;
-    width:260px
+    /* background:url("/assets/kanji.png") 30px center no-repeat; */
+    align: center;
+    /* min-height:279px; */
+    width:500px
 }
 #description article{
     position:relative;
@@ -286,6 +286,7 @@ input[type="submit"]:disabled,.button.disabled{
     text-shadow:0 -1px 0 rgba(0,0,0,0.5)
 }
 #description h4{
+	text-align: center;
     margin:12px 0 0 0
 }
 #description p{
@@ -302,8 +303,8 @@ input[type="submit"]:disabled,.button.disabled{
 }
 #speakers li,#schedule li{
     float:left;
-    height:165px;
-    margin:0 40px 40px 0;
+    /*height:165px;*/
+    margin:40px 40px 40px 0;
     width:260px
 }
 #speakers li:nth-child(2n),#schedule li:nth-child(2n){
@@ -341,5 +342,6 @@ input[type="submit"]:disabled,.button.disabled{
     height:210px
 }
 #schedule li{
-    clear:left;margin:0 0 40px 200px;height:70px
+    clear:left;margin:0 0 40px 200px;
+    height:70px
 }
